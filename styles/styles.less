@@ -121,6 +121,11 @@ html, body {
     }    
   }
   li:hover {
+    /* background image scales on hover */
+    img {
+      transform: scale(1.5); 
+      transition: transform 0.4s, opacity 0.1s 0.3s;
+    }
     .resource_info {
       opacity: 1; 
       transform: translateY(0px);
@@ -130,70 +135,3 @@ html, body {
 }
 
 
-
-
-
-/* ----------------- MEDIA QUERIES ----------------- */
-
-@media only screen and (max-width: 1250px) {
-  /* 3 images per row */
-  .resources {
-    li {
-      width: 33.33%;
-    }
-  }
-}
-
-
-
-
-@media only screen and (max-width: 900px) {
-  /* 2 images per row */
-  .resources {
-    li {
-      width: 50%;
-    }
-  }  
-  .banner {
-    h1 {
-      padding: 1.5em 0;
-      font-size: 3.5em;
-    }
-  }
-  .nav {
-    background: @secondary;
-    a, label {
-      font-size: 1.1em;
-      margin-right: 1em;
-      &:hover {
-        color: @highlight; 
-      }
-    }
-    input {     
-      font-size: 1.1em;
-      padding: 1.5em .5em;
-    }
-  }  
-}
-
-
-
-
-@media only screen and (max-width: 600px) {
-  /* 1 image per row */
-  .resources {
-    li {
-      width: 100%;
-    }
-  }
-  .banner {
-    h1 {
-      font-size: 2.5em; 
-    }
-  }
-  .nav {
-    a {
-      display: none; 
-    }
-  }
-}  

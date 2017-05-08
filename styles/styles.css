@@ -117,48 +117,8 @@ body {
   color: #31323d;
   padding-left: 1.5em;
 }
-/* ----------------- MEDIA QUERIES ----------------- */
-@media only screen and (max-width: 1250px) {
-  /* 3 images per row */
-  .resources li {
-    width: 33.33%;
-  }
-}
-@media only screen and (max-width: 900px) {
-  /* 2 images per row */
-  .resources li {
-    width: 50%;
-  }
-  .banner h1 {
-    padding: 1.5em 0;
-    font-size: 3.5em;
-  }
-  .nav {
-    background: #3a3b49;
-  }
-  .nav a,
-  .nav label {
-    font-size: 1.1em;
-    margin-right: 1em;
-  }
-  .nav a:hover,
-  .nav label:hover {
-    color: #4ad7b1;
-  }
-  .nav input {
-    font-size: 1.1em;
-    padding: 1.5em .5em;
-  }
-}
-@media only screen and (max-width: 600px) {
-  /* 1 image per row */
-  .resources li {
-    width: 100%;
-  }
-  .banner h1 {
-    font-size: 2.5em;
-  }
-  .nav a {
-    display: none;
-  }
+.resources li:hover .resource_info {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: transform 0.4s, opacity 0.1s;
 }
